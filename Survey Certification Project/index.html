@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Travels and Tours Preferences Survey</title>
+    </head>
+        <body>
+            <header>
+                <h1 id="title">Travels and Tours Preferences Survey</h1>
+                <p id="description">Thank you for taking the time in answering our survey.</p>
+            </header>
+            
+            <form id="survey-form" method="post">
+                <fieldset>
+                    <label for="name" id="name-label">Name <input type="text" required id="name" name="name" placeholder="Enter your name" class="adjustment"/></label>
+                    <label for="number" id="number-label">Age <input type="number" required id="number" name="number" min="18" max="120" class="adjustment" placeholder="Enter your age (You should be at least 18 years old)"/></label>
+                    <label for="email" id="email-label">Email <input type="email" required id="email" name="email" placeholder="Enter your email" class="adjustment"/></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="dropdown">How often do you travel in a year?
+                        <select id="dropdown" name="dropdown" class="adjustment">
+                            <option value="">Travel frequency</option>
+                            <option value="1">Rarely</option>
+                            <option value="2">Occasionally</option>
+                            <option value="3">Once a year</option>
+                            <option value="4">Several times a year</option>
+                            <option value="5">Monthly</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your preferred mode of transportation when traveling?</legend>
+                    <label for="mode_car"><input type="radio" id="mode_car" value="Car" name="mode" class="inline" checked/> Car</label>
+                    <label for="mode_airplane"><input type="radio" id="mode_airplane" value="airplane" name="mode" class="inline"/> Airplane</label>
+                    <label for="mode_train"><input type="radio" id="mode_train" value="train" name="mode" class="inline"/> Train</label>
+                    <label for="mode_bus"><input type="radio" id="mode_bus" value="bus" name="mode" class="inline"/> Bus</label>
+                    <label for="mode_others"><input type="radio" id="mode_others" value="others1" name="mode" class="inline"/> Others</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>When traveling, what type of accommodation do you prefer?</legend>
+                    <label for="accomodation_hotel"><input type="radio" id="accomodation_hotel" value="hotel" name="accomodation" checked class="inline"/> Hotel</label>
+                    <label for="accomodation_airbnb"><input type="radio" id="accomodation_airbnb" value="airbnb" name="accomodation" class="inline"/> Airbnb</label>
+                    <label for="accomodation_hostel"><input type="radio" id="accomodation_hostel" value="hostel" name="accomodation" class="inline"/> Hostel</label>
+                    <label for="accomodation_vacation_rental"><input type="radio" id="accomodation_vacation_rental" value="vacation_rental" name="accomodation" class="inline"/> Vacation Rental</label>
+                    <label for="accomodation_resort"><input type="radio" id="accomodation_resort" value="resort" name="accomodation" class="inline"/> Resort</label>
+                    <label for="accomodation_others"><input type="radio" id="accomodation_others" value="others2" name="accomodation" class="inline"/> Others</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What type of travel destination do you prefer?</legend>
+                    <label for="destination_beach"><input type="checkbox" id="destination_beach" value="destination_beach" name="destination_beach" class="inline"/> Beach</label>
+                    <label for="destination_city"><input type="checkbox" id="destination_city" value="destination_city" name="destination_city" class="inline"/> City</label>
+                    <label for="destination_mountain"><input type="checkbox" id="destination_mountain" value="destination_mountain" name="destination_mountain" class="inline"/> Mountain</label>
+                    <label for="destination_historical"><input type="checkbox" id="destination_historical" value="destination_historical" name="destination_historical" class="inline"/> Historical/Cultural</label>
+                    <label for="destination_adventure"><input type="checkbox" id="destination_adventure" value="destination_adventure" name="destination_adventure" class="inline"/> Adventure/Outdoor</label>
+                    <label for="destination_others"><input type="checkbox" id="destination_others" value="destination_others" name="destination_others" class="inline"> Others</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What activities do you enjoy the most when traveling?</legend>
+                    <label for="activity_sightseeing"><input type="checkbox" id="activity_sightseeing" value="activity_sightseeing" name="activity_sightseeing" class="inline"/> Sightseeing</label>
+                    <label for="activity_trying"><input type="checkbox" id="activity_trying" value="activity_trying" name="activity_trying" class="inline"/> Trying local cuisine</label>
+                    <label for="activity_outdoor"><input type="checkbox" id="activity_outdoor" value="activity_outdoor" name="activity_outdoor" class="inline"/> Outdoor activities</label>
+                    <label for="activity_cultural"><input type="checkbox" id="activity_cultural" value="activity_cultural" name="activity_cultural" class="inline"/> Cultural events</label>
+                    <label for="activity_shopping"><input type="checkbox" id="activity_shopping" value="activity_shopping" name="activity_shopping" class="inline"/> Shopping</label>
+                    <label for="activity_others"><input type="checkbox" id="activity_others" value="activity_others" name="activity_others" class="inline"/> Others</label>
+                    <br>
+                    <label for="description_travel_experience">Memorable Travel Experience<textarea rows="5" placeholder="Share a brief description of your most memorable travel experience." id="description_travel_experience" name="description_travel_experience"></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Submit" id="submit"/>
+
+            </form>
+        </body>
+</html>
